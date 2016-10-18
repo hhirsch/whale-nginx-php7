@@ -21,6 +21,8 @@ RUN apk --update add \
   php-bcmath \
   php-dom \
   php-xmlreader \
+  php-iconv \
+  php-gd \
   curl \
   supervisor \
   && rm -rf /var/cache/apk/*
