@@ -29,7 +29,6 @@ RUN apk --update add \
 
 # install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
-RUN adduser -u 33 -h /var/www-data -g -D  www-data
 RUN mkdir -p /etc/nginx
 RUN mkdir -p /var/run/php-fpm
 RUN mkdir -p /var/log/supervisor
