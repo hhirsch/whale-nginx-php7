@@ -37,7 +37,9 @@ RUN mkdir -p /var/log/supervisor
 RUN mkdir -p /etc/ssl/certs;
 RUN mkdir -p /etc/ssl/private;
 RUN rm /etc/nginx/nginx.conf
+RUN rm /etc/php/php-fpm.conf
 ADD nginx.conf /etc/nginx/nginx.conf
+ADD php-fpm.conf /etc/php/php-fpm.conf
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
