@@ -36,6 +36,9 @@ RUN mkdir -p /etc/ssl/certs;
 RUN mkdir -p /etc/ssl/private;
 RUN rm /etc/nginx/nginx.conf
 RUN rm /etc/php/php-fpm.conf
+RUN deluser xfs
+RUN delgroup www-data
+RUN adduser -u 33 -h /var/www -g "" -D  www-data
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD php-fpm.conf /etc/php/php-fpm.conf
 
