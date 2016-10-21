@@ -14,6 +14,7 @@ RUN apk --update add \
   php-ctype \
   php-zlib \
   php-curl \
+  php-soap \
   php-phar \
   php-xml \
   php-opcache \
