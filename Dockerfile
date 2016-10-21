@@ -25,11 +25,12 @@ RUN apk --update add \
   php-gd \
   curl \
   supervisor \
+  shadow \
   && rm -rf /var/cache/apk/*
 
 # install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
-
+RUN useradd -u 33 www-data
 RUN mkdir -p /etc/nginx
 RUN mkdir -p /var/run/php-fpm
 RUN mkdir -p /var/log/supervisor
