@@ -39,8 +39,8 @@ RUN rm /etc/php/php-fpm.conf
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD php-fpm.conf /etc/php/php-fpm.conf
 
-RUN ln -sf /dev/stdout /var/nginx/access.log && \
-    ln -sf /dev/stderr /var/nginx/error.log
+RUN ln -sf /dev/stdout /var/log/access.log && \
+    ln -sf /dev/stderr /var/log/error.log
 
 VOLUME ["/var/www", "/etc/nginx/sites-enabled", "/etc/nginx/sites-available", "/var/log/nginx"]
 
