@@ -15,6 +15,7 @@ RUN apk --update add \
   php-zlib \
   php-curl \
   php-soap \
+  php-mysqli \
   php-phar \
   php-xml \
   php-opcache \
