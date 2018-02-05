@@ -6,7 +6,7 @@ RUN apk --update add \
   php7-pdo \
   php7-json \
   php7-openssl \
-  php7-mysql \
+  php7-mysqlnd \
   php7-pdo_mysql \
   php7-mcrypt \
   php7-sqlite3 \
