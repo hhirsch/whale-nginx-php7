@@ -3,28 +3,28 @@ FROM alpine:3.5
 RUN apk --update add \
   nginx \
   php7-fpm \
-  php-pdo \
-  php-json \
-  php-openssl \
-  php-mysql \
-  php-pdo_mysql \
-  php-mcrypt \
-  php-sqlite3 \
-  php-pdo_sqlite \
-  php-ctype \
-  php-zlib \
-  php-curl \
-  php-soap \
-  php-mysqli \
-  php-phar \
-  php-xml \
-  php-opcache \
-  php-intl \
-  php-bcmath \
-  php-dom \
-  php-xmlreader \
-  php-iconv \
-  php-gd \
+  php7-pdo \
+  php7-json \
+  php7-openssl \
+  php7-mysql \
+  php7-pdo_mysql \
+  php7-mcrypt \
+  php7-sqlite3 \
+  php7-pdo_sqlite \
+  php7-ctype \
+  php7-zlib \
+  php7-curl \
+  php7-soap \
+  php7-mysqli \
+  php7-phar \
+  php7-xml \
+  php7-opcache \
+  php7-intl \
+  php7-bcmath \
+  php7-dom \
+  php7-xmlreader \
+  php7-iconv \
+  php7-gd \
   curl \
   supervisor \
   && rm -rf /var/cache/apk/*
