@@ -1,8 +1,8 @@
-FROM alpine:3.3
+FROM alpine:3.5
 
 RUN apk --update add \
   nginx \
-  php-fpm \
+  php7-fpm \
   php-pdo \
   php-json \
   php-openssl \
